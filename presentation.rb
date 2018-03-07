@@ -5,8 +5,8 @@ presentation 'pinball' do
   set_plugins :highlight
   slide "Progamming Pinball", background: 'pinball-topview.jpg' do
     point "The Machine: Parts"
+    point "The Programming: Challenges"
     point "The Current Technology"
-    point "Maybe Something Else"
   end
 
   grouped_slides do
@@ -54,6 +54,8 @@ presentation 'pinball' do
         point "Ball Save"
         point "Timers"
         point "Timed shots"
+        point "Settings"
+        point "Light control"
       end
     end
     slide "Rule Flow" do
@@ -62,6 +64,28 @@ presentation 'pinball' do
       end
     end
   # End Keeping Track Group
+  end
+
+  grouped_slides do
+    slide "Controllers" do
+      point "P-Roc", animation: "step"
+      point "Pinball Remote Operations Controller", animation: "step"
+      point "Fast", animation: "step"
+      point "Another controller which leverages queues to collect data at once", animation: "step"
+      point "Allows for sending multiple commands at once", animation: "step"
+      point "Not supported by that many frameworks", animation: "step"
+    end
+    slide "Mission Pinball Framework" do
+      point "One of most widely used frameworks"
+      point "Open Source"
+      point "Supports P-ROC, Fast, and Open Pinball Project"
+      point "These are conductors, boards, and processors", animation: "step"
+      point "Written in Python it uses YAML settings files to control machine hardware"
+    end
+    slide "PyProcGame" do
+      point "Written in Pythin specifically for P-ROC hardware"
+    end
+  # End Frameworks and languages
   end
 # End Presentation
 end
