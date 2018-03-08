@@ -3,10 +3,10 @@ require 'slide_hero'
 presentation 'pinball' do
   set_theme :sky
   set_plugins :highlight
-  slide "Progamming Pinball", background: 'pinball-topview.jpg' do
+  slide "What Goes into a Pinball Machine", background: 'pinball-topview.jpg' do
     point "The Machine: Parts"
     point "The Programming: Challenges"
-    point "The Current Technology"
+    point "The Technology"
   end
 
   grouped_slides do
@@ -17,12 +17,11 @@ presentation 'pinball' do
         point "Plunger"
         point "Flippers"
         point "Bumbers"
-        point "Holes"
         point "Lights"
         point "Ramps"
         point "Animatronics"
         point "Magnets"
-        point "Many more"
+        point "Whatever anyone decides to put in one"
       end
     end
     slide "More Parts!" do
@@ -121,6 +120,9 @@ presentation 'pinball' do
       image "framework_support.png"
     end
   # End Frameworks and languages
+  end
+  slide "Questions?" do
+    image "rudy.jpg"
   end
   slide "Resources" do
     list do
