@@ -3,14 +3,14 @@ require 'slide_hero'
 presentation 'pinball' do
   set_theme :sky
   set_plugins :highlight
-  slide "What Goes into a Pinball Machine", background: 'pinball-topview.jpg' do
-    point "The Machine: Parts"
-    point "The Programming: Challenges"
-    point "The Technology"
+  slide "What Goes into a Pinball Machine" do
+    point "The Parts"
+    point "The Programming Challenges"
+    point "The Current Technology"
   end
 
   grouped_slides do
-    slide "Parts of the Machine" do
+    slide "Some of the parts" do
       list do
         point "Cabinet"
         point "Playfield"
